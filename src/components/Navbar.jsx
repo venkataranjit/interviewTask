@@ -26,6 +26,21 @@ const Navbar = () => {
         <li>
           <Link to="/btntoggle">Button Toggle</Link>
         </li>
+        <li>
+          <Link to="/fetchapi">Fetch Api</Link>
+        </li>
+        <li>
+          <Link to="/dropdown">Dropdown</Link>
+        </li>
+        <li>
+          <Link to="/tabs">Tabs</Link>
+        </li>
+        <li>
+          <Link to="/modal">Modal</Link>
+        </li>
+        <li>
+          <Link to="/slider">Slider</Link>
+        </li>
       </ul>
     </>
   );

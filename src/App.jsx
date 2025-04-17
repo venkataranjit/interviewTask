@@ -1,7 +1,6 @@
 import { Link, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { lazy, Suspense } from "react";
-import Todo from "./components/Todo";
 
 function App() {
   const Home = lazy(() => import("./components/Home"));
@@ -12,6 +11,11 @@ function App() {
   const CheckBox2 = lazy(() => import("./components/CheckBox2"));
   const Todo = lazy(() => import("./components/Todo"));
   const ToggleBtn = lazy(() => import("./components/ToggleBtn"));
+  const FetchApi = lazy(() => import("./components/FetchApi"));
+  const Dropdown = lazy(() => import("./components/Dropdown"));
+  const Tabs = lazy(() => import("./components/Tabs"));
+  const Modal = lazy(() => import("./components/Modal"));
+  const Slider = lazy(() => import("./components/Slider"));
 
   return (
     <>
@@ -28,6 +32,11 @@ function App() {
           <Route path="/checkbox2" element={<CheckBox2 />} />
           <Route path="/todo" element={<Todo />} />
           <Route path="/btntoggle" element={<ToggleBtn />} />
+          <Route path="/fetchapi" element={<FetchApi />} />
+          <Route path="/dropdown" element={<Dropdown />} />
+          <Route path="/tabs" element={<Tabs />} />
+          <Route path="/modal" element={<Modal />} />
+          <Route path="/slider" element={<Slider />} />
         </Routes>
       </Suspense>
     </>
