@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react";
 
 function App() {
   const Home = lazy(() => import("./components/Home"));
+  const NotFound = lazy(() => import("./components/NotFound"));
   const Counter = lazy(() => import("./components/Counter"));
   const Search = lazy(() => import("./components/Search"));
   const Radio = lazy(() => import("./components/Radio"));
@@ -32,6 +33,7 @@ function App() {
       <Suspense fallback={<h6>Loading</h6>}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
           <Route path="/counter" element={<Counter />} />
           <Route path="/search" element={<Search />} />
           <Route path="/radio" element={<Radio />} />
