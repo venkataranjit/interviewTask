@@ -19,7 +19,6 @@ function App() {
   const StarRating = lazy(() => import("./components/StarRating"));
   const MultiStep = lazy(() => import("./components/MultiStep"));
   const VirtualizedList = lazy(() => import("./components/VirtualizedList"));
-  const TodoDragable = lazy(() => import("./components/TodoDragable"));
   const CountDown = lazy(() => import("./components/CountDown"));
   const Form = lazy(() => import("./components/Form"));
   const SamplePage = lazy(() => import("./components/SamplePage"));
@@ -49,7 +48,6 @@ function App() {
           <Route path="/multistep" element={<MultiStep />} />
           <Route path="/starrating" element={<StarRating />} />
           <Route path="/virtuallist" element={<VirtualizedList />} />
-          <Route path="/tododragable" element={<TodoDragable />} />
           <Route path="/countdown" element={<CountDown />} />
           <Route path="/form" element={<Form />} />
           <Route path="/sample" element={<SamplePage />} />
