@@ -41,6 +41,30 @@ const Navbar = () => {
         <li>
           <Link to="/slider">Slider</Link>
         </li>
+        <li>
+          <Link to="/starrating">Star Rating</Link>
+        </li>
+        <li>
+          <Link to="/multistep">Multi Step</Link>
+        </li>
+        <li>
+          <Link to="/virtuallist">Virtualized List</Link>
+        </li>
+        <li>
+          <Link to="/tododragable">Dragabble Todo List</Link>
+        </li>
+        <li>
+          <Link to="/countdown">CountDown</Link>
+        </li>
+        <li>
+          <Link to="/form">Form</Link>
+        </li>
+        <li>
+          <Link to="/sample">Sample Page</Link>
+        </li>
+        <li>
+          <Link to="/formik">Formik</Link>
+        </li>
       </ul>
     </>
   );

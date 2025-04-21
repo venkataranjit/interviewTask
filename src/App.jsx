@@ -16,6 +16,14 @@ function App() {
   const Tabs = lazy(() => import("./components/Tabs"));
   const Modal = lazy(() => import("./components/Modal"));
   const Slider = lazy(() => import("./components/Slider"));
+  const StarRating = lazy(() => import("./components/StarRating"));
+  const MultiStep = lazy(() => import("./components/MultiStep"));
+  const VirtualizedList = lazy(() => import("./components/VirtualizedList"));
+  const TodoDragable = lazy(() => import("./components/TodoDragable"));
+  const CountDown = lazy(() => import("./components/CountDown"));
+  const Form = lazy(() => import("./components/Form"));
+  const SamplePage = lazy(() => import("./components/SamplePage"));
+  const Formik = lazy(() => import("./components/Formik"));
 
   return (
     <>
@@ -37,6 +45,15 @@ function App() {
           <Route path="/tabs" element={<Tabs />} />
           <Route path="/modal" element={<Modal />} />
           <Route path="/slider" element={<Slider />} />
+          <Route path="/starrating" element={<StarRating />} />
+          <Route path="/multistep" element={<MultiStep />} />
+          <Route path="/starrating" element={<StarRating />} />
+          <Route path="/virtuallist" element={<VirtualizedList />} />
+          <Route path="/tododragable" element={<TodoDragable />} />
+          <Route path="/countdown" element={<CountDown />} />
+          <Route path="/form" element={<Form />} />
+          <Route path="/sample" element={<SamplePage />} />
+          <Route path="/formik" element={<Formik />} />
         </Routes>
       </Suspense>
     </>
