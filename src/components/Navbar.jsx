@@ -57,13 +57,28 @@ const Navbar = () => {
           <Link to="/countdown">CountDown</Link>
         </li>
         <li>
+          <Link to="/cusomehook">Custom Hook</Link>
+        </li>
+        <li>
+          <Link to="/timer">Timer</Link>
+        </li>
+        <li>
           <Link to="/form">Form</Link>
         </li>
         <li>
-          <Link to="/sample">Sample Page</Link>
+          <Link to="/formik">Formik</Link>
         </li>
         <li>
-          <Link to="/formik">Formik</Link>
+          <Link to="/useref">useRef</Link>
+        </li>
+        <li>
+          <Link to="/reactmemo">React Memo</Link>
+        </li>
+        <li>
+          <Link to="/usecontext">Use Context</Link>
+        </li>
+        <li>
+          <Link to="/sample">Sample Page</Link>
         </li>
       </ul>
     </>

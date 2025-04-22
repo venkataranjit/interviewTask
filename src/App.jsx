@@ -21,9 +21,16 @@ function App() {
   const MultiStep = lazy(() => import("./components/MultiStep"));
   const VirtualizedList = lazy(() => import("./components/VirtualizedList"));
   const CountDown = lazy(() => import("./components/CountDown"));
+  const CustomeHook = lazy(() => import("./components/CustomeHook"));
+  const Timer = lazy(() => import("./components/Timer"));
   const Form = lazy(() => import("./components/Form"));
-  const SamplePage = lazy(() => import("./components/SamplePage"));
   const Formik = lazy(() => import("./components/Formik"));
+  const UseRef = lazy(() => import("./components/UseRef"));
+  const ReactMemo = lazy(() => import("./components/ReactMemo"));
+  const ChildCounterContext = lazy(() =>
+    import("./components/ChildCounterContext")
+  );
+  const SamplePage = lazy(() => import("./components/SamplePage"));
 
   return (
     <>
@@ -51,9 +58,14 @@ function App() {
           <Route path="/starrating" element={<StarRating />} />
           <Route path="/virtuallist" element={<VirtualizedList />} />
           <Route path="/countdown" element={<CountDown />} />
+          <Route path="/cusomehook" element={<CustomeHook />} />
+          <Route path="/timer" element={<Timer />} />
           <Route path="/form" element={<Form />} />
-          <Route path="/sample" element={<SamplePage />} />
           <Route path="/formik" element={<Formik />} />
+          <Route path="/useref" element={<UseRef />} />
+          <Route path="/reactmemo" element={<ReactMemo />} />
+          <Route path="/usecontext" element={<ChildCounterContext />} />
+          <Route path="/sample" element={<SamplePage />} />
         </Routes>
       </Suspense>
     </>
